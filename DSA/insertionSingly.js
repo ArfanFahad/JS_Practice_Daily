@@ -1,32 +1,16 @@
-/* 
-
-class MetroStation {
-  constructor(station) {
-    this.station = station;
+class Node {
+  constructor(data) {
+    this.data = data;
     this.next = null;
   }
 }
 
-const motijheel = new MetroStation("Motijheel");
-const paltan = new MetroStation("Paltan");
-const shahbagh = new MetroStation("Shahbagh");
-const kawranbazar = new MetroStation("Kawranbazar");
-const farmgate = new MetroStation("Farmgate");
+const nodeA = new Node("Node A");
+const nodeB = new Node("Node B");
+const nodeC = new Node("Node C");
 
-motijheel.next = paltan;
-paltan.next = shahbagh;
-shahbagh.next = kawranbazar;
-kawranbazar.next = farmgate;
+nodeA.next = nodeB;
+nodeB.next = nodeC;
 
-function objectPass(station) {
-  let current = station;
-
-  while (current !== null) {
-    console.log(current.station);
-    current = current.next;
-  }
-}
-
-objectPass(motijheel);
-
-*/
+let nodeZero = new Node("Node Zero");
+nodeZero.next = nodeA;
